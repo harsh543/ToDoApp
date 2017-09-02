@@ -14,5 +14,10 @@ Completed user stories:
  * [x] Optional: THe items can be editted by clicking on them
  
  
+ Walkthrough of all user stories:
+
+![Video Walkthrough](todo_app.gif)
+ 
+ 
  
  
