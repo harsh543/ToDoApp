@@ -1,0 +1,48 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harsh.simpletodo.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:onClick="onAddItem"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnAddItem"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:hint="Add Item"
+        android:layout_toStartOf="@+id/btnAddItem"
+        android:layout_toLeftOf="@+id/btnAddItem"
+        android:layout_alignBottom="@+id/btnAddItem"/>
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddItem"
+        android:layout_alignEnd="@+id/btnAddItem"
+        android:layout_alignLeft="@+id/etNewItem"
+        android:layout_alignRight="@+id/btnAddItem"
+        android:layout_alignStart="@+id/etNewItem"
+        android:layout_alignParentTop="true"
+       />
+</RelativeLayout>
